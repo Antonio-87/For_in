@@ -11,6 +11,6 @@ test.each([
         {key: "health", value: 10},
       ],
     },
-    ])('sort object %s', ({ data, expected }) => {
+    ])('order by props', ({ data, expected }) => {
         expect(orderByProps(data, ["name", "level"])).toEqual(expected);
     });
